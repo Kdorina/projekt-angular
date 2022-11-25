@@ -14,11 +14,11 @@
         </thead>
     
         <tbody *ngIf="subjects.length">
-            <tr *ngFor="let Newsubject of subjects">
-                <td>{{ Newsubject.id }}</td>
-                <td>{{ Newsubject.subject }}</td>
-                <td><button class="btn btn-outline-success">Szerkeztés</button></td>
-                <td><button  class="btn btn-outline-danger">Törlés</button></td>
+            <tr *ngFor="let sub of subjects">
+                <td>{{ sub.id }}</td>
+                <td>{{ sub.subject }}</td>
+                <td><button class="btn btn-outline-success" routerLink="/edit/{{sub.id}}">Szerkeztés</button></td>
+                <td><button  class="btn btn-outline-danger" (click)="delete(sub.id)">Törlés</button></td>
             </tr>
         </tbody>
     </table>
@@ -26,4 +26,7 @@
 <div>
     <button class="btn btn-info" routerLink="/add">Felvétel</button>
 </div>
+
+
+<div>
 

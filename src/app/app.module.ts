@@ -7,14 +7,18 @@ import { AppComponent } from './app.component';
 
 import {HttpClientModule} from '@angular/common/http'
 
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { BodyComponent } from './body/body.component';
 import { CalcpageComponent } from './calcpage/calcpage.component';
 import { PagesComponent } from './pages/pages.component';
-import { MediaComponent } from './media/media.component';
+import { CalendarComponent } from './calendar/calendar.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { NewSubjectComponent } from './new-subject/new-subject.component';
+import { EditSubjectComponent } from './edit-subject/edit-subject.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,15 +28,19 @@ import { NewSubjectComponent } from './new-subject/new-subject.component';
     BodyComponent,
     CalcpageComponent,
     PagesComponent,
-    MediaComponent,
+    CalendarComponent,
     SubjectsComponent,
     NewSubjectComponent,
+    EditSubjectComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

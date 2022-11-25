@@ -16,8 +16,8 @@ export const navbarData = [
         label:"Pages"
     },
     {
-        routeLink: "media",
+        routeLink: "calendar",
         icon: "fal fa-camera",
-        label:"Media"
+        label:"Naptár"
     },
 ];

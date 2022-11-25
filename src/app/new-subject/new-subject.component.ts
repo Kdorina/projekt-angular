@@ -20,7 +20,7 @@ export class NewSubjectComponent implements OnInit {
 
     // console.log(this.subjects);
 
-    this.subjectService.addSubject(this.subjects as string).subscribe(subject=>{
+    this.subjectService.add(this.subjects as string).subscribe(subject=>{
       this.subjects = subject
     });
     console.log(this.subjects);
