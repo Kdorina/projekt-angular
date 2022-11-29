@@ -12,7 +12,7 @@
 
         <header>
             <p class="current-date" ></p>
-            <button >date</button>
+            <button (click)="date()">date</button>
             <div class="icons">
                 <span id="prev" class="material-symbols-outlined" (click)="prev">prev</span>
                 <span id="next" class="material-symbols-outlined" (click)="next">next</span>
@@ -29,7 +29,7 @@
                 <li>Vasárnap</li>
             </ul>
 
-            <ul class="days">
+            <ul class="days" ngClass="daysTag">
                 
             </ul>
         </div>

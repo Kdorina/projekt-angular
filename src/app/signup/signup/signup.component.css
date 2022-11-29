@@ -1,0 +1,27 @@
+@import '~bootstrap';
+
+
+#box{
+    background-color:#f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* #text{
+    border-radius: 10px;
+    border: 0px;
+    height:20px;
+    border-style: solid;
+    border-color: #FFAB91;
+    box-shadow: 0px 0px 10px -5px #00695C;
+} */
+
+/* #button{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color:#EC407A;
+}
+#button:hover{
+    background-color:#00695C;
+    color:white;
+} */

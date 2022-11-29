@@ -20,6 +20,10 @@ import { EditSubjectComponent } from './edit-subject/edit-subject.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+//REGLOG
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup/signup.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CalendarComponent,
     SubjectsComponent,
     NewSubjectComponent,
-    EditSubjectComponent
+    EditSubjectComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,8 @@ import { PagesComponent } from './pages/pages.component';
 import { CalcpageComponent } from './calcpage/calcpage.component';
 import { NewSubjectComponent } from './new-subject/new-subject.component';
 import { EditSubjectComponent } from './edit-subject/edit-subject.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup/signup.component';
 
 
 const routes: Routes = [
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: "calendar", component:CalendarComponent},
   {path: "add", component:NewSubjectComponent},
   {path: "edit/:subjectId", component:EditSubjectComponent},
+  {path: "login", component:LoginComponent},
+  {path: "signup", component:SignupComponent},
 
 ];
 
