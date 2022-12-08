@@ -13,9 +13,9 @@ export class NewSubjectComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  add(subject:string){
+  add(Newsubject:string){
     this.subjects = {
-      'subject': subject,
+      'subject': Newsubject,
     };
 
     // console.log(this.subjects);

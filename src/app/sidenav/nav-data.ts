@@ -1,8 +1,13 @@
 export const navbarData = [
 
     {
-        routeLink: "dashboard",
+        routeLink: "home",
         icon: "fal fa-home",
+        label:"Főoldal"
+    },
+    {
+        routeLink: "dashboard",
+        icon: "fal fa-book",
         label:"Dashboard"
     },
     {

@@ -7,14 +7,19 @@ import { Observable } from 'rxjs';
 })
 export class ReglogService {
 
+  
   url:string = 'http://localhost:8000';
 
   constructor(private http: HttpClient) { }
 
-  reglog(){
-    return this.http.get<any>(this.url+`/api/auth`);
-    
+   // Login
+   login(email: string, password: string) {
+    return this.http.post('http://localhost:8000/api/login', {
+      email: email,
+      password: password,
+    });
   }
+
   httpOptions = {
     headers : new HttpHeaders({
       'Content-Type':' application/json'

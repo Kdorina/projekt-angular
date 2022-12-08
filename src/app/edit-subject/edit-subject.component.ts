@@ -13,9 +13,7 @@ export class EditSubjectComponent implements OnInit {
   subjectId: any;
   subject: any;
 
-  constructor(private route: ActivatedRoute, 
-              private router: Router, 
-              private subjectService: SubjectService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private subjectService: SubjectService) { }
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
@@ -28,7 +26,7 @@ export class EditSubjectComponent implements OnInit {
     });
   }
   
-  update(subject: string){
+  update(Newsubject: string){
     this.subjectService.update(this.subjectId, this.subject).subscribe((res)=>{
       console.log(' updated successfully!');
       this.router.navigateByUrl('/');

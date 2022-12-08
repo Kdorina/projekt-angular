@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 
 import {HttpClientModule} from '@angular/common/http'
 
-
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { BodyComponent } from './body/body.component';
@@ -23,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //REGLOG
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup/signup.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,8 @@ import { SignupComponent } from './signup/signup/signup.component';
     NewSubjectComponent,
     EditSubjectComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

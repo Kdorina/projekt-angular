@@ -1,6 +1,9 @@
-import { HttpClient } from '@angular/common/http';
+
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
+import { Router } from '@angular/router';
+import { ReglogService } from '../service/reglog.service';
 
 @Component({
   selector: 'app-login',
@@ -9,28 +12,26 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  form: FormGroup;
-
-  constructor(private fb: FormBuilder, private http: HttpClient) { }
+  constructor( private router:Router, private auth:ReglogService) { }
 
   ngOnInit(): void {
-    this.form = this.fb.group({
-        email: '',
-        password:'',
-    });
   }
 
-  submit(){
-    const formData = this.form.getRawValue();
+  onSubmit(form:NgForm){
+    const email = form.value.email;
+    const password = form.value.password;
 
-    const data = {
-      full_name: formData.email,
-      password: formData.password,
-      grant_type: 'password',
-      
-    }
+    // console.log(email, password);
+    this.auth.login(email, password).subscribe((res:any)=>{
+      // console.log(res);
+      localStorage.setItem('user', JSON.stringify(res))
 
-    this.http.post('http//localhost:8000/auth', data);
-  }
+      // redirect to dashboard
+      this.router.navigate(['/dashboard']);
+    },
+    err=>{
+      console.log(err);
+    })
 
+}
 }

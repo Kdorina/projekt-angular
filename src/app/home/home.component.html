@@ -1,14 +1,14 @@
-<h1>Dashboard</h1>
+
+<h1>Kezdőlap</h1>
 <div class="card">
-    <div class="card-head">Vedd fel aktuális tantárgyidat!</div>
+    <div class="card-head">Kezdőlap</div>
     <div class="card-body">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores officia consequuntur architecto praesentium nihil voluptate assumenda aliquid sequi maiores eos voluptatem aperiam asperiores mollitia, saepe cum quaerat reiciendis? Deleniti, ea.
     </div>
 </div>
-
-
-<div class="container">
-    <app-subjects></app-subjects>
-    <router-outlet></router-outlet>
+<h1>Tantárgyaim</h1>
+<div *ngIf="subjects.length">
+    <td *ngFor="let sub of subjects">
+        <li>{{ sub.subject }}</li>
+    </td>
 </div>
-
