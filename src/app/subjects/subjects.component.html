@@ -4,7 +4,7 @@
 
 <h2>Tantárgyfelvétel</h2>
 
-<div>
+<div class="subTable">
     <table class="table table-striped">
         <thead>
             <th>ID</th>
@@ -17,8 +17,8 @@
             <tr *ngFor="let sub of subjects">
                 <td>{{ sub.id }}</td>
                 <td>{{ sub.subject }}</td>
-                <td><button class="btn btn-outline-success" routerLink="/edit/{{sub.id}}">Szerkeztés</button></td>
-                <td><button  class="btn btn-outline-danger" (click)="delete(sub.id)">Törlés</button></td>
+                <td><button class="editBtn btn btn-outline-success" routerLink="/edit/{{sub.id}}"><i class="fa fa-pencil fa-fw"></i></button></td>
+                <td><button  class=" deletBtn btn btn-outline-danger" (click)="delete(sub.id)">Törlés</button></td>
             </tr>
         </tbody>
     </table>
