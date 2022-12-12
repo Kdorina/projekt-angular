@@ -4,12 +4,16 @@
 
 
 
-<div class="mb-3">
-    <label for="subject" class="form-label">Tantárgy</label>
-    <input type="text" class="form-control" #Newsubject>
-</div>
-
-<div>
-    <button class="btn btn-outline-success" type="button" 
-    (click)="add(Newsubject.value); Newsubject.value='' ">Felvesz</button>
+<div class="container">
+    <div>
+        <div class="mb-3">
+            <label for="subject" id="subjectNew" class="form-label">Tantárgy</label>
+            <input type="text" class="form-control" placeholder="tantárgy..." #Newsubject>
+        </div>
+        
+        <div>
+            <button class="btn btn-outline-info" type="button" href="/dashboard"
+            (click)="add(Newsubject.value); Newsubject.value='' ">Felvesz</button>
+        </div>
+    </div>
 </div>

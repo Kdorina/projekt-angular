@@ -1,0 +1,13 @@
+
+@media screen and (max-width:480px) {
+    .pageName{
+        margin-left: -40px;
+    }
+
+    .card{
+        margin-left: -40px;
+    }
+    .container{
+        margin-left: -60px;
+    }
+}

@@ -1,6 +1,35 @@
-li{
+td{
     font-style: none;
     text-decoration: none;
     list-style: none;
     padding: 5px;
+    border: 2px;
+    border-spacing: 20px;
+}
+@media screen and (max-width:480px) {
+
+    h1{
+        margin-left: -40px;
+    }
+    .card{
+        margin-left: -40px;
+    }
+
+    .subContainer{
+        margin-left: -40px;
+    }
+
+    .subject{
+        background-color: rgb(252, 243, 185);
+        padding: 10px;
+        border-radius: 5px;
+        width:300px;
+    }
+
+    .subject:hover{
+        background-color: rgb(241, 229, 149);
+        padding: 10px;
+        border-radius: 5px;
+        width:300px;
+    }
 }

@@ -7,6 +7,8 @@
 }
 
 @media screen and (max-width:480px) {
+
+
     .sidenav{
         background-color:#4649a0;
         transition: all .5s ease;
@@ -89,9 +91,10 @@
     }
     
     .sidenav-nav-link{
+        margin-top: 10px;
         display: flex;
         align-items: center;
-        height: 3rem;
+        height: 2.5rem;
         color: #ffffff;
         text-decoration: none;
         border-radius: 0.625rem;
@@ -124,10 +127,6 @@
     
     
 }
-
-
-
-
 
 /* TELJES NÉZET */
 @media screen and (min-width:480px){

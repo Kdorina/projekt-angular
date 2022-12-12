@@ -6,9 +6,11 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores officia consequuntur architecto praesentium nihil voluptate assumenda aliquid sequi maiores eos voluptatem aperiam asperiores mollitia, saepe cum quaerat reiciendis? Deleniti, ea.
     </div>
 </div>
-<h1>Tantárgyaim</h1>
-<div *ngIf="subjects.length">
-    <td *ngFor="let sub of subjects">
-        <li>{{ sub.subject }}</li>
-    </td>
+<!-- <h1>Tantárgyaim</h1> -->
+<div class="subContainer">
+    <div *ngIf="subjects.length">
+        <div class=" subject mb-2" *ngFor="let sub of subjects" >
+            <tr>{{ sub.subject }}</tr>
+        </div>
+    </div>
 </div>
